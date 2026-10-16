@@ -1,0 +1,23 @@
+[project]
+name = "support-ai"
+version = "0.1.0"
+description = "Support ticket triage: classical ML baseline for Banking77 intent classification"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.143.1",
+    "joblib>=1.6.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "pytest>=9.1.1",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+support-ai = "support_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14"]
+build-backend = "uv_build"
